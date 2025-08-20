@@ -6,15 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Anti-Imperialism Reading Club</title>
 	<link rel="stylesheet" href="./static/assets/styles/output.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
 		rel="stylesheet">
 </head>
 
-<body class="font-[EB-Garamond] flex flex-col justify-center">
-	<div class="navbar bg-base-100 shadow-sm">
+<body class="font-[Archivo_Black] flex flex-col min-h-screen">
+	<!-- NAVIGATION BAR -->
+	<div class="navbar bg-white shadow-sm text-gray-800">
 		<div class="navbar-start">
+			<!-- MOBILE NAVIGATION BAR -->
 			<div class="dropdown">
 				<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -24,29 +31,172 @@
 					</svg>
 				</div>
 				<ul tabindex="0"
-					class="text-2xl menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-					<li><a>Item 1</a></li>
-					<li><a>Item 2</a></li>
-					<li><a>Item 3</a></li>
+					class="text-2xl menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow bg-white">
+					<li><a class="text-2xl">About</a></li>
+					<li><a class="text-2xl">Resources</a></li>
+					<li><a class="text-2xl">Study</a></li>
+					<li><a class="text-2xl">Contact Us</a></li>
 				</ul>
 			</div>
-			<a class="btn btn-ghost text-xl">AIRC</a>
+			<img class="w-15 h-15 rounded-full" src="static/assets/images/airc.png">
+			<a class="btn btn-ghost text-2xl" href="index.html">AIRC</a>
 		</div>
+		<!-- DESKTOP NAVIGATION BAR -->
 		<div class="navbar-center hidden lg:flex">
 			<ul class="text-2xl menu menu-horizontal px-1">
-				<li><a>Item 1</a></li>
-				<li><a>Item 2</a></li>
-				<li><a>Item 3</a></li>
+				<li><a class="hover:bg-black hover:text-white">About</a></li>
+				<li><a class="hover:bg-black hover:text-white">Resources</a></li>
+				<li><a class="hover:bg-black hover:text-white">Study Portal</a></li>
+				<li><a class="hover:bg-black hover:text-white">Contact Us</a></li>
 			</ul>
 		</div>
 		<div class="navbar-end">
 
 		</div>
 	</div>
-	<h1 class="text-center text-4xl mt-6">Anti-Imperialism Reading Club</h1>
-	<h1 class="text-center text-4xl mt-6">Weekly Gaza Report - August 10th to 16th</h1>
-	<h1 class="text-center text-4xl mt-6">Coming Soon...</h1>
-	<img class="w-30 h-30 self-center mt-8 rounded-full" src="./static/assets/images/airc.png">
+
+	<main class="flex-grow flex flex-col bg-black">
+		<!-- OUR MISSION -->
+		<div class="hero bg-black">
+			<div class="hero-content text-center">
+				<div class="max-w-md flex flex-col justify-center">
+					<h1 class="text-5xl mt-4 font-bold text-white">Our Mission</h1>
+					<p class="pt-4 text-2xl text-white">
+						Website under construction...
+					</p>
+					<img class="w-30 h-30 self-center m-8 rounded-full" src="./static/assets/images/airc.png">
+				</div>
+			</div>
+		</div>
+
+		<!-- MEETINGS & UPDATES -->
+		<div class="bg-red-800">
+			<h1 class="text-4xl text-center pt-8 font-bold text-white">Meetings & Updates</h1>
+			<div class="flex flex-col md:flex-row justify-center items-center p-8 gap-4">
+				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title text-2xl text-black">Apply To Join Meetings</h2>
+						<div class="card-actions justify-end">
+							<button
+								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title text-2xl text-black">Join Palestine in Northfield</h2>
+						<div class="card-actions justify-end">
+							<button
+								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title text-2xl text-black">Access Reading Notes</h2>
+						<div class="card-actions justify-end">
+							<button
+								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- WHAT HAVE WE BEEN WORKING ON? -->
+		<h1 class="text-center text-4xl mt-8 font-bold text-white">What have we been working on?</h1>
+		<div class="flex flex-col md:flex-row justify-center items-center bg-black p-8 gap-4">
+			<div class="card bg-white w-82 md:w-96 shadow-sm">
+				<figure>
+					<img class="h-80 md:h-100 mt-8" src="static/assets/images/bsr.jpg"
+						alt="Cover of Blackshirts & Reds" />
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title text-2xl text-black">April 2025</h2>
+					<div class="card-actions justify-end">
+						<button
+							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+					</div>
+				</div>
+			</div>
+			<div class="card bg-white w-82 md:w-96 shadow-sm">
+				<figure>
+					<img class="h-80 md:h-100 mt-8" src="static/assets/images/kh.jpg" alt="Shoes" />
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title text-2xl text-black">June & July 2025</h2>
+					<div class="card-actions justify-end">
+						<button
+							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+					</div>
+				</div>
+			</div>
+			<div class="card bg-white w-82 md:w-96 shadow-sm">
+				<figure>
+					<img class="h-60 md:h-80 mt-18 mb-10" src="static/assets/images/bb.jpeg" alt="Shoes" />
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title text-2xl text-black">June & July 2025</h2>
+					<div class="card-actions justify-end">
+						<button
+							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- OTHER THINGS -->
+		<div class="bg-red-800">
+			<h1 class="text-4xl text-center pt-8 font-bold text-white">Other Things</h1>
+			<div class="flex flex-col md:flex-row justify-center items-center p-8 gap-4">
+				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title text-2xl text-black">...</h2>
+						<div class="card-actions justify-end">
+							<button
+								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title text-2xl text-black">...</h2>
+						<div class="card-actions justify-end">
+							<button
+								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title text-2xl text-black">...</h2>
+						<div class="card-actions justify-end">
+							<button
+								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer sm:footer-horizontal bg-black text-white p-10">
+		<aside>
+			<img class="w-15 h-15 rounded-full" src="static/assets/images/airc.png">
+			Anti-Imperialism Reading Club
+			<br />
+			A student founded and self-lead education initiative to inform, empower action, and create change
+			</p>
+		</aside>
+		<nav>
+			<h6 class="footer-title">Links</h6>
+			<a class="link link-hover">About</a>
+			<a class="link link-hover">Resources</a>
+			<a class="link link-hover">Study Portal</a>
+			<a class="link link-hover">Contact Us</a>
+		</nav>
+	</footer>
 </body>
 
 </html>
