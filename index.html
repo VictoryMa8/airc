@@ -17,7 +17,7 @@
 		rel="stylesheet">
 </head>
 
-<body class="font-[Archivo_Black] flex flex-col min-h-screen">
+<body class="font-[Archivo_Black] flex flex-col min-h-screen bg-black">
 	<!-- NAVIGATION BAR -->
 	<div class="navbar bg-white shadow-sm text-gray-800">
 		<div class="navbar-start">
@@ -32,10 +32,10 @@
 				</div>
 				<ul tabindex="0"
 					class="text-2xl menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow bg-white">
-					<li><a class="text-2xl">About</a></li>
-					<li><a class="text-2xl">Resources</a></li>
-					<li><a class="text-2xl">Study</a></li>
-					<li><a class="text-2xl">Contact Us</a></li>
+					<li><a href="about.html" class="text-2xl">About</a></li>
+					<li><a href="resources.html" class="text-2xl">Resources</a></li>
+					<li><a href="study_portal.html" class="text-2xl">Study Portal</a></li>
+					<li><a href="contact_us.html" class="text-2xl">Contact Us</a></li>
 				</ul>
 			</div>
 			<img class="w-15 h-15 rounded-full" src="static/assets/images/airc.png">
@@ -44,10 +44,10 @@
 		<!-- DESKTOP NAVIGATION BAR -->
 		<div class="navbar-center hidden lg:flex">
 			<ul class="text-2xl menu menu-horizontal px-1">
-				<li><a class="hover:bg-black hover:text-white">About</a></li>
-				<li><a class="hover:bg-black hover:text-white">Resources</a></li>
-				<li><a class="hover:bg-black hover:text-white">Study Portal</a></li>
-				<li><a class="hover:bg-black hover:text-white">Contact Us</a></li>
+				<li><a href="about.html" class="hover:bg-black hover:text-white">About</a></li>
+				<li><a href="resources.html" class="hover:bg-black hover:text-white">Resources</a></li>
+				<li><a href="study_portal.html" class="hover:bg-black hover:text-white">Study Portal</a></li>
+				<li><a href="contact_us.html" class="hover:bg-black hover:text-white">Contact Us</a></li>
 			</ul>
 		</div>
 		<div class="navbar-end">
@@ -61,10 +61,15 @@
 			<div class="hero-content text-center">
 				<div class="max-w-md flex flex-col justify-center">
 					<h1 class="text-5xl mt-4 font-bold text-white">Our Mission</h1>
-					<p class="pt-4 text-2xl text-white">
-						Website under construction...
+					<p class="pt-4 text-2xl text-white font-[Courier_Prime]">
+						Anti-Imperialism Reading Club is a student founded and self-lead education initiative to inform,
+						empower action, and create
+						change
 					</p>
-					<img class="w-30 h-30 self-center m-8 rounded-full" src="./static/assets/images/airc.png">
+					<div class="flex flex-row justify-center gap-4">
+						<img class="w-30 h-30 self-center my-8 rounded-full" src="./static/assets/images/airc.png">
+						<img class="w-30 h-30 self-center my-8 rounded-full" src="./static/assets/images/airc2.png">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -77,8 +82,8 @@
 					<div class="card-body">
 						<h2 class="card-title text-2xl text-black">Apply To Join Meetings</h2>
 						<div class="card-actions justify-end">
-							<button
-								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+							<button class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Coming
+								Soon</button>
 						</div>
 					</div>
 				</div>
@@ -86,8 +91,8 @@
 					<div class="card-body">
 						<h2 class="card-title text-2xl text-black">Join Palestine in Northfield</h2>
 						<div class="card-actions justify-end">
-							<button
-								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+							<button class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Coming
+								Soon</button>
 						</div>
 					</div>
 				</div>
@@ -95,8 +100,8 @@
 					<div class="card-body">
 						<h2 class="card-title text-2xl text-black">Access Reading Notes</h2>
 						<div class="card-actions justify-end">
-							<button
-								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+							<button class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Coming
+								Soon</button>
 						</div>
 					</div>
 				</div>
@@ -114,8 +119,9 @@
 				<div class="card-body">
 					<h2 class="card-title text-2xl text-black">April 2025</h2>
 					<div class="card-actions justify-end">
-						<button
-							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						<a target="_blank"
+							href="https://welshundergroundnetwork.com/wp-content/uploads/2020/04/blackshirts-and-reds-by-michael-parenti.pdf"
+							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Read</a>
 					</div>
 				</div>
 			</div>
@@ -126,8 +132,9 @@
 				<div class="card-body">
 					<h2 class="card-title text-2xl text-black">June & July 2025</h2>
 					<div class="card-actions justify-end">
-						<button
-							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						<a target="_blank"
+							href="https://ia801802.us.archive.org/4/items/william-blum-killing-hope-us-military-and-cia-interventions-since-world-war-ii-2/William%20Blum%20-%20Killing%20Hope_%20US%20Military%20and%20CIA%20Interventions%20Since%20World%20War%20II%20%282003%2C%20Zed%20Books%20Ltd%29%20-%20libgen.li.pdf"
+							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Read</a>
 					</div>
 				</div>
 			</div>
@@ -138,8 +145,8 @@
 				<div class="card-body">
 					<h2 class="card-title text-2xl text-black">June & July 2025</h2>
 					<div class="card-actions justify-end">
-						<button
-							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
+						<a target="_blank" href="https://open.spotify.com/show/2pibBnPuHqKr07hxEMZE41"
+							class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">Listen</a>
 					</div>
 				</div>
 			</div>
@@ -151,7 +158,7 @@
 			<div class="flex flex-col md:flex-row justify-center items-center p-8 gap-4">
 				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
 					<div class="card-body">
-						<h2 class="card-title text-2xl text-black">...</h2>
+						<h2 class="card-title text-2xl text-black">Coming Soon...</h2>
 						<div class="card-actions justify-end">
 							<button
 								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
@@ -160,7 +167,7 @@
 				</div>
 				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
 					<div class="card-body">
-						<h2 class="card-title text-2xl text-black">...</h2>
+						<h2 class="card-title text-2xl text-black">Coming Soon...</h2>
 						<div class="card-actions justify-end">
 							<button
 								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
@@ -169,7 +176,7 @@
 				</div>
 				<div class="card bg-white min-h-40 w-82 md:w-96 shadow-sm">
 					<div class="card-body">
-						<h2 class="card-title text-2xl text-black">...</h2>
+						<h2 class="card-title text-2xl text-black">Coming Soon...</h2>
 						<div class="card-actions justify-end">
 							<button
 								class="btn btn-outline hover:bg-black hover:text-white text-black text-2xl">View</button>
@@ -191,10 +198,10 @@
 		</aside>
 		<nav>
 			<h6 class="footer-title">Links</h6>
-			<a class="link link-hover">About</a>
-			<a class="link link-hover">Resources</a>
-			<a class="link link-hover">Study Portal</a>
-			<a class="link link-hover">Contact Us</a>
+			<a href="about.html" class="link link-hover">About</a>
+			<a href="resources.html" class="link link-hover">Resources</a>
+			<a href="study_portal.html" class="link link-hover">Study Portal</a>
+			<a href="contact_us.html" class="link link-hover">Contact Us</a>
 		</nav>
 	</footer>
 </body>

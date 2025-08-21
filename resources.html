@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="./static/assets/styles/output.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-[Archivo_Black] flex flex-col min-h-screen bg-black">
+    <!-- NAVIGATION BAR -->
+    <div class="navbar bg-white shadow-sm text-gray-800">
+        <div class="navbar-start">
+            <!-- MOBILE NAVIGATION BAR -->
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="text-2xl menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow bg-white">
+                    <li><a href="about.html" class="text-2xl">About</a></li>
+                    <li><a href="resources.html" class="text-2xl">Resources</a></li>
+                    <li><a href="study_portal.html" class="text-2xl">Study Portal</a></li>
+                    <li><a href="contact_us.html" class="text-2xl">Contact Us</a></li>
+                </ul>
+            </div>
+            <img class="w-15 h-15 rounded-full" src="static/assets/images/airc.png">
+            <a class="btn btn-ghost text-2xl" href="index.html">AIRC</a>
+        </div>
+        <!-- DESKTOP NAVIGATION BAR -->
+        <div class="navbar-center hidden lg:flex">
+            <ul class="text-2xl menu menu-horizontal px-1">
+                <li><a href="about.html" class="hover:bg-black hover:text-white">About</a></li>
+                <li><a href="resources.html" class="hover:bg-black hover:text-white">Resources</a></li>
+                <li><a href="study_portal.html" class="hover:bg-black hover:text-white">Study Portal</a></li>
+                <li><a href="contact_us.html" class="hover:bg-black hover:text-white">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+
+        </div>
+    </div>
+
+    <main class="flex-grow flex flex-col bg-black"></main>
+
+    <!-- FOOTER -->
+    <footer class="footer sm:footer-horizontal bg-black text-white p-10">
+        <aside>
+            <img class="w-15 h-15 rounded-full" src="static/assets/images/airc.png">
+            Anti-Imperialism Reading Club
+            <br />
+            A student founded and self-lead education initiative to inform, empower action, and create change
+            </p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">Links</h6>
+            <a href="about.html" class="link link-hover">About</a>
+            <a href="resources.html" class="link link-hover">Resources</a>
+            <a href="study_portal.html" class="link link-hover">Study Portal</a>
+            <a href="contact_us.html" class="link link-hover">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
