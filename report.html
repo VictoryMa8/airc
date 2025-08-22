@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Portal</title>
-    <link rel="stylesheet" href="./static/assets/styles/output.css">
+    <title>Report</title>
+    <!-- tailwind -->
+	<link rel="stylesheet" href="./static/assets/styles/output.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,7 +19,7 @@
 </head>
 
 <body class="font-[Archivo_Black] flex flex-col min-h-screen bg-black">
-    	<!-- NAVIGATION BAR -->
+	<!-- NAVIGATION BAR -->
 	<div class="navbar bg-white shadow-sm text-gray-800">
 		<div class="navbar-start">
 			<!-- MOBILE NAVIGATION BAR -->
@@ -58,17 +59,11 @@
 	</div>
 
     <main class="flex-grow flex flex-col justify-center items-center bg-black">
-        <h1 class="text-white text-4xl my-8">Study Portal</h1>
+        <h1 class="text-white text-4xl my-8" id="title" style="font-family:Georgia, 'Times New Roman', Times, serif"></h1>
         <hr class="w-1/2 mb-8">
-        <a class="text-black bg-white p-4 text-2xl m-4" target=" _blank"
-            href="https://www.youtube.com/live/STnOfek17lA?si=1P07VPvxMix7WFQX">
-            <p>Assignment Due: 23 August 2025</p>
-            <p class="underline font-[Courier_Prime] mb-4">The Electronic Intifada:
-                Day 685</p>
-            <p>Take notes on one segment of the live stream and bring them to Saturday's discussion</p>
-        </a>
-
-
+		<div class="text-left" id="body" style="font-family:Georgia, 'Times New Roman', Times, serif; margin: 0vw 10vw;">
+			
+		</div>
     </main>
 
     <!-- FOOTER -->
@@ -89,5 +84,37 @@
         </nav>
     </footer>
 </body>
+
+<script>
+let body="";
+document.addEventListener("DOMContentLoaded", () => {
+	let params = new URLSearchParams(window.location.search);
+	let date = params.get("date");
+	let report_url = "https://antiimperialismreading.club/reports/" + date + ".txt"
+	fetch(report_url)
+		.then((res) => res.text())
+		.then((text) => {
+			let sections = text.split('\n\n');
+			let title = sections[0]
+
+			// for each section
+			for (let i = 1; i < sections.length; i ++) {
+				let section = sections[i].split('\n');
+
+				// create the section title
+				body += "<div class='text-4xl my-8'>" + section[0] + "</div>";
+
+				// create each note
+				for (let note_idx = 1; note_idx < section.length; note_idx ++) {
+					body += "<div class='text-lg border-l-2 border-white p-4 my-2'>" + section[note_idx] + "</div>";
+				}
+			} 
+			
+			document.getElementById("title").innerHTML = title;
+			document.getElementById("body").innerHTML = body;
+		})
+		.catch((e) => console.error(e));
+});
+</script>
 
 </html>

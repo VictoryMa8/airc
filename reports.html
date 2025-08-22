@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Portal</title>
-    <link rel="stylesheet" href="./static/assets/styles/output.css">
+    <title>Reports</title>
+    <!-- tailwind -->
+	<link rel="stylesheet" href="./static/assets/styles/output.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -58,17 +59,21 @@
 	</div>
 
     <main class="flex-grow flex flex-col justify-center items-center bg-black">
-        <h1 class="text-white text-4xl my-8">Study Portal</h1>
+        <h1 class="text-white text-4xl my-8">Reports on the Palestinian Genocide</h1>
         <hr class="w-1/2 mb-8">
-        <a class="text-black bg-white p-4 text-2xl m-4" target=" _blank"
-            href="https://www.youtube.com/live/STnOfek17lA?si=1P07VPvxMix7WFQX">
-            <p>Assignment Due: 23 August 2025</p>
-            <p class="underline font-[Courier_Prime] mb-4">The Electronic Intifada:
-                Day 685</p>
-            <p>Take notes on one segment of the live stream and bring them to Saturday's discussion</p>
-        </a>
-
-
+		<ul class="text-left" id="reports">
+			<li class="p-4">
+				<a class="text-white p-4 text-2xl m-4 flex flex-col" target=" _blank" href="report.html">
+					<span class="">8/23/2025</span>
+					<span style="font-style:italic; font-family:Georgia, 'Times New Roman', Times, serif">AAAAAAAAAAAAAA AAaaaaaaaaaaaaaaaaaaa aaaAAAAAAAAA bbbbbbb</span>
+				</a>
+			</li>
+			<li class="p-4">
+				<a class="text-white p-4 text-2xl m-4" target=" _blank" href="report.html">
+					<span class="">8/23/2025</span>
+				</a>
+			</li>
+		</ul>
     </main>
 
     <!-- FOOTER -->
@@ -89,5 +94,32 @@
         </nav>
     </footer>
 </body>
+
+<script>
+let to_write="";
+document.addEventListener("DOMContentLoaded", () => {
+	fetch("https://antiimperialismreading.club/reports.txt")
+		.then((res) => res.text())
+		.then((text) => {
+			for (let report_idx in text.split('\n\n')) {
+				let report = text.split('\n\n')[report_idx];
+				let report_date = report.split('\n')[0];
+				let report_title = report.split('\n')[1];
+				let report_url = "report.html?date="+report_date;
+				to_write += (
+					"<li class='p-4'><a class='text-white p-4 text-2xl m-4 flex flex-col' target=' _blank' href='" +
+					report_url + 
+					"'><span class=''>" + 
+					report_date +
+					"</span><span style=\"font-style:italic; font-family:Georgia, 'Times New Roman', Times, serif\">" +
+					report_title +
+					"</span></a></li>"
+				);
+			}
+			document.getElementById("reports").innerHTML = to_write;
+		})
+		.catch((e) => console.error(e));
+});
+</script>
 
 </html>
