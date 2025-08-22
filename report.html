@@ -87,28 +87,41 @@
 
 <script>
 let body="";
+let title = "";
 document.addEventListener("DOMContentLoaded", () => {
 	let params = new URLSearchParams(window.location.search);
 	let date = params.get("date");
 	let report_url = "https://antiimperialismreading.club/reports/" + date + ".txt"
 	fetch(report_url)
-		.then((res) => res.text())
+		.then((res) => {
+			if (res.status != 200) {
+				return "";
+			} else {
+				return res.text();
+			}
+		})
 		.then((text) => {
-			let sections = text.split('\n\n');
-			let title = sections[0]
+			if (text.length == 0) {
+				title = "404";
+				body = "<div class='text-lg'>Report could not be found.</div>"
+			} else {
 
-			// for each section
-			for (let i = 1; i < sections.length; i ++) {
-				let section = sections[i].split('\n');
+				let sections = text.split('\n\n');
+				title = sections[0]
 
-				// create the section title
-				body += "<div class='text-4xl my-8'>" + section[0] + "</div>";
+				// for each section
+				for (let i = 1; i < sections.length; i ++) {
+					let section = sections[i].split('\n');
 
-				// create each note
-				for (let note_idx = 1; note_idx < section.length; note_idx ++) {
-					body += "<div class='text-lg border-l-2 border-white p-4 my-2'>" + section[note_idx] + "</div>";
-				}
-			} 
+					// create the section title
+					body += "<div class='text-4xl my-8'>" + section[0] + "</div>";
+
+					// create each note
+					for (let note_idx = 1; note_idx < section.length; note_idx ++) {
+						body += "<div class='text-lg border-l-2 border-white p-4 my-2'>" + section[note_idx] + "</div>";
+					}
+				} 
+			}
 			
 			document.getElementById("title").innerHTML = title;
 			document.getElementById("body").innerHTML = body;
