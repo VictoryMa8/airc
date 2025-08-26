@@ -94,7 +94,7 @@
 <script>
 	let to_write = "";
 	document.addEventListener("DOMContentLoaded", () => {
-		fetch("http://127.0.0.1:5500/reports.txt")
+		fetch("https://antiimperialismreading.club/reports.txt")
 			.then((res) => res.text())
 			.then((text) => {
 				for (let report_idx in text.split('\n\n')) {
