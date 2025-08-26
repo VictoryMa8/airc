@@ -59,8 +59,11 @@
 	</div>
 
 	<main class="flex-grow flex flex-col justify-center items-center bg-black">
-		<h1 class="text-white text-4xl my-8" id="title">
+		<h1 class="text-white text-4xl mt-8" id="title">
 		</h1>
+		<a href="reports.html"
+			class="btn border-white border-1 bg-white hover:text-white hover:bg-black text-black text-2xl my-4">Back To
+			Reports</a>
 		<hr class="w-1/2 mb-8">
 		<div class="text-left" id="body"
 			style="font-family:Georgia, 'Times New Roman', Times, serif; margin: 0vw 10vw;">
@@ -94,7 +97,7 @@
 	document.addEventListener("DOMContentLoaded", () => {
 		let params = new URLSearchParams(window.location.search);
 		let date = params.get("date");
-		let report_url = "https://antiimperialismreading.club/reports/" + date + ".txt"
+		let report_url = "http://127.0.0.1:5500/reports/" + date + ".txt"
 		fetch(report_url)
 			.then((res) => {
 				if (res.status != 200) {

@@ -94,7 +94,7 @@
 <script>
 	let to_write = "";
 	document.addEventListener("DOMContentLoaded", () => {
-		fetch("https://antiimperialismreading.club/reports.txt")
+		fetch("http://127.0.0.1:5500/reports.txt")
 			.then((res) => res.text())
 			.then((text) => {
 				for (let report_idx in text.split('\n\n')) {
@@ -103,11 +103,11 @@
 					let report_title = report.split('\n')[1];
 					let report_url = "report.html?date=" + report_date;
 					to_write += (
-						"<li class='p-4 bg-white text-black hover:bg-red-800 hover:text-white transition duration-200 ease-in-out'><a class='p-4 text-2xl m-4 flex flex-col' href='" +
+						"<li class='p-2 mb-2 bg-white text-black hover:bg-red-800 hover:text-white transition duration-200 ease-in-out'><a class='p-2 text-2xl m-2 flex flex-col' href='" +
 						report_url +
 						"'><span class=''>" +
 						report_date +
-						"</span><span class='text-3xl underline italic font-[Courier_Prime]'>" +
+						"</span><span class='text-3xl italic font-[Courier_Prime]'>" +
 						report_title +
 						"</span></a></li>"
 					);
