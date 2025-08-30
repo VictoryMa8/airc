@@ -1,3 +1,23 @@
-AIRC Weekly Report: Gaza - August 17th to 23rd, 2025
+AIRC Weekly Gaza Report - August 17th to 23rd, 2025
 
-Coming soon...
+Israeli Military Operations
+Israel has killed at least 400 Palestinians and injured nearly 2700, according to the Ministry of Health in Gaza, between August  13th and August 20th 
+The Israeli army has been obliterating entire city blocks  in Gaza City and other areas in Northern Gaza 
+According to the health ministry, 22 people were killed and 49 were injured at “Aid Distribution Sites” on Wednesday alone 
+The Israeli army has intensified its attacks on the Al Zaitoun neighborhood with continuous air strikes, artillery shelling, and gunfire 
+IOF have been using remotely controlled vehicles to demolish buildings and force families out of their homes
+A researcher from Euro-Med Human Rights Monitor, Maha Hussaini, stated that Israel is carrying out an “obliteration campaign against Gaza’s largest neighborhood, Zaitoun, under almost no media coverage.”
+No media coverage, since they deliberately murdered all journalists in Gaza
+
+International Organisations & Diplomacy
+“Hundreds of families have been forced to flee, including many children, people with disability, and older people with nowhere safe to go amid dire humanitarian conditions. While others reportedly remain  trapped, completely cut off from food, water, and medicine supplies.” 
+The United Nations High Commissioner for Human Rights
+Over 2 weeks, the UN has recorded at least 54 attacks on Residential buildings and entire blocks in Gaza City, killing entire families in airstrikes and shelling 
+Euro-Med Human Rights Monitor has reported that Israeli Occupation forces have been using remotely controlled vehicles packed with explosives to destroy buildings in Al Zeitoun, in order to force Palestinians out of their homes and shelters. 
+
+Big Tech’s Role in Israel’s Genocide
+In May of 2025, Microsoft released a statement promising to conduct a review into how the IOF was using their Azure cloud ops technology. They claimed that the participation of an independent firm in this review would make it credible, all in response to mounting pressure that included an article from The Guardian. This article reported that Azure was being used for mass surveillance in both Gaza and the West Bank; Microsoft noted that the “standard terms of service prohibit this type of usage.” 
+This month, on the 15th of August, Microsoft updated this statement with the results of the report, which they say found no evidence of a violation of their terms of service. In Electronic Intifada’s weekly report, they interview author Omar Zahzah, who describes how terms of service like the ones referenced by Microsoft are not a useful, ethical way of holding big tech accountable. He praises ongoing protests and direct action by Microsoft employees and the public because, unlike an unthinking company whose only motivation is profit, these independent forces understand that any interaction with the culprit of an ongoing genocide demonstrates complicity.
+Further reading: “Terms of Servitude,” by Omar Zahzah, <a href=’https://blogs.microsoft.com/on-the-issues/2025/05/15/statement-technology-israel-gaza/’>Microsoft’s Report</a>,  <a href=’https://noazureforapartheid.com/’>No Azure For Apartheid</a>
+Campaigners say their protests will continue until the company stops its complicity, and call for a broader movement against big tech’s sponsorship of genocide.
+<div class=’report-quote’>“We are seeing a colonial weaponization of digital platforms in order to continue the zionist process of colonizing, expelling, and ultimately eliminating Palestinian life and Palestinian presence.”</div>
