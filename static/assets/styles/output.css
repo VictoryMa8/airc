@@ -2182,6 +2182,11 @@
       background-color: var(--color-blue-800);
     }
   }
+  .sm\:m-5 {
+    @media (width >= 40rem) {
+      margin: calc(var(--spacing) * 5);
+    }
+  }
   .sm\:mt-5 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 5);
