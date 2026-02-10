@@ -30,7 +30,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
-    --radius-4xl: 2rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1071,20 +1070,11 @@
     border-left-style: var(--tw-border-style);
     border-left-width: 2px;
   }
-  .border-accent {
-    border-color: var(--color-accent);
-  }
-  .border-red-600 {
-    border-color: var(--color-red-600);
-  }
   .border-red-800 {
     border-color: var(--color-red-800);
   }
   .border-white {
     border-color: var(--color-white);
-  }
-  .border-b-red-600 {
-    border-bottom-color: var(--color-red-600);
   }
   .bg-black {
     background-color: var(--color-black);
